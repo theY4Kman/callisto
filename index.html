@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Callisto</title>
+    <link type="text/css" href="css/flick/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+    <link type="text/css" href="css/screen.css" rel="stylesheet" media="screen" />
+    <script type="text/javascript" src="js/jquery/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.inputhints.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.guid.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.totalstorage.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="js/callisto.js"></script>
+  </head>
+  <body>
+    <section id="tabs">
+      <div id="new-list-wrapper" style="display: none;">
+        <button id="new-list">New List</button>
+      </div>
+      <div id="new-list-entry-wrapper" style="display: none;" title="Add List">
+        <input id="new-list-entry" type="text" title="List name" />
+      </div>
+      <ul>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#lists">Lists</a></li>
+      </ul>
+      <section id="calendar">
+
+      </section>
+      <section id="lists">
+        <ul id="lists-list">
+          <li id="list-base" class="list">
+            <section>
+              <header>
+                <h2 class="list-title"></h2>
+                <div class="list-delete-wrapper">
+                  <button class="list-delete delete-button"></button>
+                </div>
+                <div class="ui-helper-clearfix"></div>
+              </header>
+              <ul class="list-items">
+                <li id="list-item-base" class="item">
+                  <div class="list-item-title"></div>
+                  <div class="list-item-delete-wrapper">
+                    <button class="list-item-delete delete-button"></button>
+                  </div>
+                  <div class="ui-helper-clearfix"></div>
+                </li>
+              </ul>
+              <footer>
+                <input type="text" class="new-item" title="New item" />
+              </footer>
+            </section>
+          </li>
+        </ul>
+        <div class="ui-helper-clearfix"></div>
+      </section>
+    </section>
+  </body>
+</html>

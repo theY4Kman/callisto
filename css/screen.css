@@ -1,0 +1,140 @@
+body {
+  background-color: #f9fafe;
+  color: #212021;
+  word-wrap: break-word; }
+
+button.delete-button {
+  border-radius: 15px;
+  height: 20px;
+  width: 20px; }
+  button.delete-button.ui-state-hover {
+    background: #c00000;
+    border: 2px solid #8d0000; }
+
+#tabs.ui-widget-content {
+  border: 0;
+  background-color: transparent; }
+  #tabs.ui-widget-content > ul.ui-tabs-nav.ui-widget-header {
+    background: transparent;
+    border: 0; }
+    #tabs.ui-widget-content > ul.ui-tabs-nav.ui-widget-header li.ui-tabs-selected {
+      background: #e3e8fa;
+      margin-bottom: -3px;
+      padding-bottom: 3px; }
+  #tabs.ui-widget-content .ui-tabs-panel {
+    background: #e3e8fa;
+    border: 3px solid #d6ddf8; }
+
+#new-list-wrapper {
+  float: right;
+  text-align: right; }
+  #new-list-wrapper #new-list {
+    border-radius: 15px; }
+    #new-list-wrapper #new-list .ui-button-text {
+      font-weight: normal;
+      padding: 5px 15px 5px 28px; }
+
+#lists {
+  padding: 0;
+  /* #lists-list */ }
+  #lists #lists-list {
+    list-style-type: none;
+    padding: 0;
+    /* & > li.list */ }
+    #lists #lists-list > li.list {
+      background: #c5cef5;
+      border: 2px solid #292eae;
+      border-radius: 10px;
+      border-top-width: 0;
+      box-shadow: 5px 5px 3px #888;
+      float: left;
+      margin: 10px;
+      width: 300px;
+      /* header */
+      /* footer */ }
+      #lists #lists-list > li.list#list-id-default header {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: relative; }
+        #lists #lists-list > li.list#list-id-default header h2:after {
+          content: '(unmovable)';
+          display: inline-block;
+          font-size: 12px;
+          font-style: italic;
+          font-weight: normal;
+          height: 15px;
+          margin-left: 5px;
+          margin-top: -7.5px;
+          position: absolute;
+          right: 10px;
+          top: 50%; }
+        #lists #lists-list > li.list#list-id-default header .list-delete-wrapper {
+          display: none; }
+      #lists #lists-list > li.list header {
+        background-color: #6367da;
+        border-radius: 10px 10px 0 0;
+        cursor: pointer;
+        display: block;
+        margin: -4px -2px 0 -2px; }
+        #lists #lists-list > li.list header h2 {
+          float: left;
+          margin: 5px 0 5px 5px;
+          padding: 5px; }
+        #lists #lists-list > li.list header .list-delete-wrapper {
+          float: right; }
+          #lists #lists-list > li.list header .list-delete-wrapper .list-delete {
+            margin-right: 16px;
+            position: relative;
+            top: 15px; }
+      #lists #lists-list > li.list .list-items {
+        list-style-type: none;
+        padding: 10px; }
+        #lists #lists-list > li.list .list-items li.item {
+          background-color: white;
+          border: 1px solid #222;
+          border-radius: 5px;
+          box-shadow: 0 0 1px #888;
+          cursor: pointer;
+          margin-bottom: 5px;
+          padding: 6px 3px 5px 10px; }
+          #lists #lists-list > li.list .list-items li.item:hover {
+            box-shadow: 0 0 6px #2126B8; }
+            #lists #lists-list > li.list .list-items li.item:hover .list-item-delete {
+              visibility: visible; }
+          #lists #lists-list > li.list .list-items li.item .list-item-title {
+            float: left;
+            max-width: 240px; }
+          #lists #lists-list > li.list .list-items li.item .list-item-delete {
+            float: right;
+            visibility: hidden; }
+          #lists #lists-list > li.list .list-items li.item.ui-sortable-helper {
+            box-shadow: 7px 10px 3px rgba(153, 153, 153, 0.7);
+            -khtml-transform: rotate(4deg);
+            -moz-transform: rotate(4deg);
+            -ms-transform: rotate(4deg);
+            -o-transform: rotate(4deg);
+            -webkit-transform: rotate(4deg); }
+            #lists #lists-list > li.list .list-items li.item.ui-sortable-helper .list-item-delete {
+              visibility: hidden; }
+      #lists #lists-list > li.list footer {
+        background-color: white;
+        border-radius: 0 0 10px 10px; }
+        #lists #lists-list > li.list footer input.new-item {
+          border: 0;
+          border-radius: 0 0 10px 10px;
+          border-top: 1px solid #222;
+          margin-top: 0;
+          outline: 0;
+          padding: 5px;
+          width: 290px; }
+          #lists #lists-list > li.list footer input.new-item.hint {
+            color: #6f6b6f;
+            font-style: italic; }
+    #lists #lists-list #list-base {
+      display: none; }
+
+/* #lists */
